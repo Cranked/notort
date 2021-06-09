@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Not1" />
+      <TextField id="txtNote1" fx:id="note1" layoutX="91.0" layoutY="10.0" promptText="1.notunuzu giriniz" styleClass="text-area" stylesheets="@style.css" />
+      <Label layoutX="14.0" layoutY="56.0" text="Not2" />
+      <TextField fx:id="note2" layoutX="91.0" layoutY="52.0" promptText="2.notunuzu giriniz" styleClass="text-area" />
+      <Label layoutX="14.0" layoutY="97.0" text="Not3" />
+      <TextField fx:id="note3" layoutX="91.0" layoutY="93.0" promptText="3.notunuzu giriniz" styleClass="text-area" />
+      <Button fx:id="calculateButton" layoutX="14.0" layoutY="209.0" mnemonicParsing="false" onAction="#showResult" prefHeight="26.0" prefWidth="79.0" stylesheets="@style.css" text="Hesapla" />
+      <Button fx:id="exitButton" cancelButton="true" layoutX="140.0" layoutY="209.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="79.0" styleClass="exitButton" text="Çıkış" />
+      <Label fx:id="resultLabelText" layoutX="14.0" layoutY="147.0" prefHeight="0.0" prefWidth="116.0" text="Sonuc">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label fx:id="resultLabel" layoutX="138.0" layoutY="147.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
