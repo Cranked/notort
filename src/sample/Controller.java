@@ -80,13 +80,11 @@ public class Controller implements Initializable {
 
     public double calculate(int... numbers) {
         int toplam = 0;
-        int countNumber = 0;
         double sonuc;
         for (int i : numbers) {
             toplam += i;
-            countNumber++;
         }
-        sonuc = Double.parseDouble(String.valueOf(toplam)) / countNumber;
+        sonuc = Double.parseDouble(String.valueOf(toplam)) / numbers.length;
         return sonuc;
     }
 
